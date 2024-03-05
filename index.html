@@ -2,32 +2,26 @@
 <html>
   
 <head>
-    <title>full screen iframe</title>
-    <style type="text/css">
-        html {
-            overflow: auto;
-        }
-          
-        html,
-        body,
-        div,
-        iframe {
-            margin: 0px;
-            padding: 0px;
-            height: 100%;
-            border: none;
-        }
-          
-        iframe {
-            display: block;
-            width: 100%;
-            border: none;
-            overflow-y: auto;
-            overflow-x: hidden;
-        }
+    <title>EMBRASIL CONCURSOS</title>
+    <style>
+      body {
+        position: relative;
+        margin: 0;
+      }
+      iframe, div, a {
+        border:none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      div {
+        z-index: 100;
+      }
+      a {
+        display: block;
+      }
     </style>
 </head>
-  
 <body>
     <iframe src="https://portal.concursosembrasil.com.br/"
             frameborder="0" 
@@ -41,6 +35,5 @@
     <a href="pagelogin.html">teste</a>
   </div>
   
-</body>
-  
+</body> 
 </html>
